@@ -1,0 +1,5 @@
+pip
+django 
+pandas 
+psycopg2 
+gunicorn
