@@ -23,4 +23,4 @@ WORKDIR /work
 
 ADD .bash .bash 
 
-RUN . .bash/_dep.sh
+RUN . .bash/main.sh
