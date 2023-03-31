@@ -13,6 +13,6 @@ auth_file = userlist.txt
 logfile = pgbouncer.log
 pidfile = pgbouncer.pid
 ignore_startup_parameters=options
-" > pgbouncer.ini
+" > ../etc/pgbouncer/pgbouncer.ini
 
-echo \"${DBUSER}\" \"${DBPASS}\" > userlist.txt
+echo \"${DBUSER}\" \"${DBPASS}\" > ../etc/pgbouncer/userlist.txt
