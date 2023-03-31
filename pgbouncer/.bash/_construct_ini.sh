@@ -14,6 +14,7 @@ listen_port = 6432
 listen_addr = 0.0.0.0
 auth_type = trust
 auth_file = userlist.txt
+server_tls_sslmode = require
 logfile = pgbouncer.log
 pidfile = pgbouncer.pid
 ignore_startup_parameters=options
