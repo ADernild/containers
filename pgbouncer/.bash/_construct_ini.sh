@@ -1,9 +1,9 @@
 #!/bin/bash
 
-source /work/githubbing/env/.env
+source /work/*/env/.env
 
 echo "[databases] 
-${DBNAME} = host=${DBHOST} dbname=${DBNAME} user=${DBUSER} password=${DBPASS}
+${DBNAME} = host=${DBHOST} port=5432 dbname=${DBNAME} user=${DBUSER} password=${DBPASS}
 
 [pgbouncer]
 listen_port = 6432
@@ -15,4 +15,4 @@ pidfile = pgbouncer.pid
 ignore_startup_parameters=options
 " > pgbouncer.ini
 
-echo '"${DBUSER}" "${DBPASS}"' > userlist.txt
+echo \"${DBUSER}\" \"${DBPASS}\" > userlist.txt

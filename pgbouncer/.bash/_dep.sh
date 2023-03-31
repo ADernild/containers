@@ -10,5 +10,3 @@ sudo su -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc
 sudo apt-get update && \
 sudo apt-get install -y pgdg-keyring
 sudo apt-get install -y pgbouncer
-
-sudo mv etc/pgbouncer/pgbouncer.ini /etc/pgbouncer/pgbouncer.ini
